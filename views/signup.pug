@@ -1,0 +1,109 @@
+doctype html
+html(lang="nl")
+	head
+		title Login V13
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		// ===============================================================================================
+		link(rel="icon" type="image/png" href="images/icons/favicon.ico")
+		// ===============================================================================================
+		link(rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css")
+		// ===============================================================================================
+		link(rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css")
+		// ===============================================================================================
+		link(rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css")
+		// ===============================================================================================
+		link(rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css")
+		// ===============================================================================================
+		link(rel="stylesheet" type="text/css" href="vendor/animate/animate.css")
+		// ===============================================================================================
+		link(rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css")
+		// ===============================================================================================
+		link(rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css")
+		// ===============================================================================================
+		link(rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css")
+		// ===============================================================================================
+		link(rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css")
+		// ===============================================================================================
+		link(rel="stylesheet" type="text/css" href="css/util.css")
+		link(rel="stylesheet" type="text/css" href="css/main.css")
+		// ===============================================================================================
+	body(style="background-color: #999999;")
+		header(role="banner")
+			nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+				.container-fluid
+					a.navbar-brand(href="/") Genesis
+					button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation")
+						span.navbar-toggler-icon
+					#navbarsExample05.collapse.navbar-collapse
+						ul.navbar-nav.pl-md-5.ml-auto
+							li.nav-item
+								a.nav-link.active(href="/") Home
+							li.nav-item
+								a.nav-link(href="/index#Wie?") Over Ons
+							li.nav-item
+								a.nav-link(href="/events") Events
+							li.nav-item.dropdown
+								a#dropdown04.nav-link.dropdown-toggle(href="/activiteiten" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Activiteiten
+								.dropdown-menu(aria-labelledby="dropdown04")
+									a.dropdown-item(href="/activiteiten#Leren") Leren
+									a.dropdown-item(href="/activiteiten#Lezen") Lezen
+									a.dropdown-item(href="/activiteiten#Leven") Leven
+							li.nav-item
+								a.nav-link(href="/login") Login
+							li.nav-item
+								a.nav-link(href="/contact") Contact
+		// END header
+		.limiter
+			.container-login100(style="background-image: url('images/Overons_1.jpg');")
+				// <div class="login100-more" style="background-image: url('images/Activiteiten_2.jpg');">
+				.wrap-login100.p-l-50.p-r-50.p-t-72.p-b-50
+					form.login100-form.validate-form(method = "POST", action = "/users/signup")
+						span.login100-form-title.p-b-59
+							| Sign Up
+						.wrap-input100.validate-input(data-validate="Correct Email adres benodigd: ex@abc.xyz")
+							span.label-input100 Email
+							input.input100(type="text" name="email" placeholder="Email adres...")
+							span.focus-input100
+						.wrap-input100.validate-input(data-validate="Naam is benodigd")
+							span.label-input100 Naam
+							input.input100(type="text" name="last_name" placeholder="Naam...")
+							span.focus-input100
+						.wrap-input100.validate-input(data-validate="Voornaam is benodigd")
+							span.label-input100 Voornaam
+							input.input100(type="text" name="first_name" placeholder="Voornaam...")
+							span.focus-input100
+						.wrap-input100.validate-input(data-validate="Paswoord is benodigd")
+							span.label-input100 Paswoord
+							input.input100(type="password" name="password" placeholder="*************")
+							span.focus-input100
+						.flex-m.w-full.p-b-33
+							.contact100-form-checkbox
+								span.label-input100 
+									| Door in te tekenen gaat u akkoord met de  
+									a.txt2.hov1(href="/gebruiksvoorwaarden.pdf")
+										| Gebruikersvoorwaarden.
+						.container-login100-form-btn
+							.wrap-login100-form-btn
+								.login100-form-bgbtn
+								button.login100-form-btn(method = "POST", action = "/users/signup")
+									| Sign Up
+							a.dis-block.txt3.hov1.p-r-30.p-t-10.p-b-10.p-l-30(href="/login")
+								| Sign in
+								i.fa.fa-long-arrow-right.m-l-5
+		// ===============================================================================================
+		script(src="vendor/jquery/jquery-3.2.1.min.js")
+		// ===============================================================================================
+		script(src="vendor/animsition/js/animsition.min.js")
+		// ===============================================================================================
+		script(src="vendor/bootstrap/js/popper.js")
+		script(src="vendor/bootstrap/js/bootstrap.min.js")
+		// ===============================================================================================
+		script(src="vendor/select2/select2.min.js")
+		// ===============================================================================================
+		script(src="vendor/daterangepicker/moment.min.js")
+		script(src="vendor/daterangepicker/daterangepicker.js")
+		// ===============================================================================================
+		script(src="vendor/countdowntime/countdowntime.js")
+		// ===============================================================================================
+		script(src="js/signup/main.js")

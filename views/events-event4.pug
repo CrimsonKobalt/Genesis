@@ -1,0 +1,170 @@
+doctype html
+html(lang="en")
+	head
+		title Genesis — 
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		link(href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oxygen:400,700" rel="stylesheet")
+		link(rel="stylesheet" href="css/animate.css")
+		link(rel="stylesheet" href="css/owl.carousel.min.css")
+		link(rel="stylesheet" href="css/jquery.fancybox.min.css")
+		link(rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css")
+		link(rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css")
+		// Theme Style
+		link(rel="stylesheet" href="css/style.css")
+	body
+		header(role="banner")
+			nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+				.container-fluid
+					a.navbar-brand(href="/") Genesis
+					button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation")
+						span.navbar-toggler-icon
+					#navbarsExample05.collapse.navbar-collapse
+						ul.navbar-nav.pl-md-5.ml-auto
+							li.nav-item
+								a.nav-link.active(href="/") Home
+							li.nav-item
+								a.nav-link(href="/#Wie?") Over Ons
+							li.nav-item
+								a.nav-link(href="/events") Events
+							li.nav-item.dropdown
+								a#dropdown04.nav-link.dropdown-toggle(href="/activiteiten" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Activiteiten
+								.dropdown-menu(aria-labelledby="dropdown04")
+									a.dropdown-item(href="/activiteiten#Leren") Leren
+									a.dropdown-item(href="/activiteiten#Lezen") Lezen
+									a.dropdown-item(href="/activiteiten#Leven") Leven
+							li.nav-item
+								a.nav-link(href="/login") Login
+							li.nav-item
+								a.nav-link(href="/contact") Contact
+		// END header
+		.top-shadow
+		.inner-page
+			.slider-item(style="background-image: url('images/Banner.jpg');")
+				.container
+					.row.slider-text.align-items-center.justify-content-center
+						.col-md-8.text-center.col-sm-12.element-animate.pt-5
+							h1.pt-5
+								span Bezoek aan het Creation Museum
+							p.mb-5.w-75 15-17 Mei 2020.
+		section.section
+			.container
+				.row.justify-content-center
+					.col-md-8.mb-5
+						h2 Begeleid bezoek aan het Creation Museum met Ken Ham
+				.half.d-lg-flex.d-block
+					.image.order-2.element-animate(data-animate-effect="fadeIn" style="background-image: url('https://pbs.twimg.com/media/ED8aMMZXsAE18EO.jpg')")
+					.text.text-center.element-animate
+						h3.mb-4 Creation Museum
+						p.mb-5
+							| Het Creation Museum, opgericht door Ken Ham is een must-see voor elke enthousiaste gelovige.
+							| Nog nooit eerder werd zo duidelijk het Bijbelse verhaal in zijn geheel verteld.
+						p
+							a.btn.btn-primary.btn-sm.px-3.py-2(href="https://creationmuseum.org/") Meer Weten?
+				.half.d-lg-flex.d-block
+					.image.element-animate(data-animate-effect="fadeIn" style="background-image: url('https://1.bp.blogspot.com/_sVCDBprrgVU/TH_RhqGRFdI/AAAAAAAAA80/W40OX52SJMY/s1600/May+2010+044.JPG')")
+					.text.text-center.element-animate
+						h3.mb-4 'Garden of Eden'
+						p.mb-5
+							| Een van dé toppers van het museum is zonder twijfel de wandeling door de 'Garden of Eden',
+							| een voorstelling van het Paradijs waar Adam en Eva leefden in den beginne.
+						p
+							a.btn.btn-primary.btn-sm.px-3.py-2(href="https://creationmuseum.org/eden/") Meer Weten?
+				.half.d-lg-flex.d-block
+					.image.order-2.element-animate(data-animate-effect="fadeIn" style="background-image: url('http://www.bpnews.net/images/05ce19c6-332e-4422-ad2f-a2baa03c6c36-Ken-Ham.jpg?width=890')")
+					.text.text-center.element-animate
+						h3.mb-4 Ken Ham
+						p.mb-5
+							| Onze gids voor het bezoek zal niemand minder zijn dan Ken Ham zelf, de oprichter van het Creation Museum
+							| en een ongeloofelijke bron aan wijsheid en kennis. Het belooft een leerrijke trip te worden!
+						p
+							a.btn.btn-primary.btn-sm.px-3.py-2(href="https://en.wikipedia.org/wiki/Ken_Ham") Meer Weten?
+			.container(id= "registered")
+				.row.justify-content-center
+					.col-md-8.mb-5
+						h2 Praktische info
+				.row.justify-content-center
+					.col-md-8
+						p
+							| Naar jaarlijkse gewoonte organiseren we een weekend met een gegidste rondleiding doorheen het Creation Museum onder leiding van Ken Ham, haar oprichter.
+						p Dit jaar zal het doorgaan van vrijdag 15 mei tot en met zondag 17 mei.
+						p
+							| Afspraak aan het Laurentplein op vrijdag de 15e om 15u. Heen- en terugreis inbegrepen.
+						p
+							| Doorheen het weekend zijn ook enkele andere toeristische trips gepland in de omgeving; Deze zullen onderweg toegelicht worden maar zijn niet inbegrepen in de prijs.
+						p
+							| Schrijf u in en stort nadien het bedrag van €550 op BEXX XXXX XXXX XXXX. Vermeld zeker u naam en emailadres! Stortingen zonder deze vermeldingen kunnen niet geaccepteerd worden!
+						p  
+						p  
+						form(method = "POST", action = "/users/aanwezige")
+							input(type= "text", name="name", placeholder="Vul uw naam in...")
+							button(method = "POST", action = "/users/aanwezige").btn.btn-primary.py-3.px-3 Laat uw aanwezigheid weten!
+						if(registered)
+							b u bent reeds geregistreerd
+						if(succesful)
+							b Succesvol aangemeld!
+						p
+							b Opgelet!
+							|  Geen storting = geen plaats!
+		footer.site-footer(role="contentinfo")
+			.container
+				.row.mb-5
+					.col-md-4.mb-5
+						h3 Genesis
+						p.mb-5
+							| Alles is uit hem ontstaan, alles is door hem geschapen, alles heeft in hem zijn doel. Hem komt de eer toe tot in eeuwigheid. Amen.
+						ul.list-unstyled.footer-link.d-flex.footer-social
+							li
+								a.p-2(href="https://twitter.com/godcreationism")
+									span.fa.fa-twitter
+							li
+								a.p-2(href="https://www.facebook.com/BYECreationism/")
+									span.fa.fa-facebook
+							li
+								a.p-2(href="https://www.instagram.com/explore/tags/creationism/")
+									span.fa.fa-instagram
+					.col-md-5.mb-5.pl-md-5
+						h3 Contact Informatie
+						ul.list-unstyled.footer-link
+							li.d-block
+								span.d-block Adres:
+								span Gebroeders de Smetstraat 1, 9000 Gent, België
+							li.d-block
+								span.d-block Telefoon:
+								span +32 484 436 909
+							li.d-block
+								span.d-block Email:
+								span info@genesis.com
+					.col-md-3.mb-5
+						h3 Snel toegang
+						ul.list-unstyled.footer-link
+							li
+								a(href="/#Wie?") Over Ons
+							li
+								a(href="/contact") Contact
+							li
+								a(href="/gebruiksvoorwaarden") Gebruiksvoorwaarden
+							li
+								a(href="/login") Login
+					.col-md-3
+				.row
+					.col-12.text-md-center.text-left
+						p.copyright
+							| Copyright ©
+							script.
+								document.write(new Date().getFullYear());
+							|  All rights reserved by Genesis
+		// END footer
+		// loader
+		#loader.show.fullscreen
+			svg.circular(width="48px" height="48px")
+				circle.path-bg(cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee")
+				circle.path(cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214")
+		script(src="js/jquery-3.2.1.min.js")
+		script(src="js/popper.min.js")
+		script(src="js/bootstrap.min.js")
+		script(src="js/owl.carousel.min.js")
+		script(src="js/jquery.waypoints.min.js")
+		script(src="js/jquery.fancybox.min.js")
+		script(src="js/main.js")
+		script(src="js/main.js")

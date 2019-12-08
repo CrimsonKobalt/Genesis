@@ -1,0 +1,202 @@
+doctype html
+html(lang="en")
+	head
+		title Genesis — 
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		link(href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oxygen:400,700" rel="stylesheet")
+		link(rel="stylesheet" href="css/animate.css")
+		link(rel="stylesheet" href="css/owl.carousel.min.css")
+		link(rel="stylesheet" href="css/jquery.fancybox.min.css")
+		link(rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css")
+		link(rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css")
+		// Theme Style
+		link(rel="stylesheet" href="css/style.css")
+	body
+		header(role="banner")
+			nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+				.container-fluid
+					a.navbar-brand(href="/") Genesis
+					button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation")
+						span.navbar-toggler-icon
+					#navbarsExample05.collapse.navbar-collapse
+						ul.navbar-nav.pl-md-5.ml-auto
+							li.nav-item
+								a.nav-link.active(href="/") Home
+							li.nav-item
+								a.nav-link(href="/#Wie?") Over Ons
+							li.nav-item
+								a.nav-link(href="/events") Events
+							li.nav-item.dropdown
+								a#dropdown04.nav-link.dropdown-toggle(href="/activiteiten" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Activiteiten
+								.dropdown-menu(aria-labelledby="dropdown04")
+									a.dropdown-item(href="/activiteiten#Leren") Leren
+									a.dropdown-item(href="/activiteiten#Lezen") Lezen
+									a.dropdown-item(href="/activiteiten#Leven") Leven
+							li.nav-item
+								a.nav-link(href="/login") Login
+							li.nav-item
+								a.nav-link(href="/contact") Contact
+		// END header
+		.top-shadow
+		section.home-slider.owl-carousel
+			.slider-item(style="background-image: url('images/Homepagina_1.jpg');")
+				.container
+					.row.slider-text.align-items-center.justify-content-center
+						.col-lg-7.text-center.col-sm-12.element-animate
+							.btn-play-wrap.mx-auto
+								p.mb-4
+									a.btn-play(href="https://www.youtube.com/watch?v=teu7BCZTgDs" data-fancybox="" data-ratio="2")
+										span.ion.ion-ios-play
+							h1.mb-4
+								span God's creatie
+							p.mb-5.w-75
+								| Alles wat op aarde leeft, is door God geschapen binnen het kader van tijd en ruimte.
+			.slider-item(style="background-image:url('images/Homepagina_2.jpg');")
+				.container
+					.row.slider-text.align-items-center.justify-content-center
+						.col-lg-7.text-center.col-sm-12.element-animate
+							.btn-play-wrap.mx-auto
+								p.mb-4
+									a.btn-play(href="https://www.youtube.com/watch?v=mwajLA2KTJ8" data-fancybox="" data-ratio="2")
+										span.ion.ion-ios-play
+							h1
+								span Jesus Christus
+							p.mb-5.w-75 Vertrouw in God, vertrouw in ons.
+		// END slider
+		p(style="margin-bottom:100px;")
+		section.section.bg-light(id="Wie?")
+			.container
+				.row
+					.col-md-6.col-lg-4.element-animate
+						.media.block-6.d-block.text-center
+							.media-body
+								h3.heading Wie?
+								p
+									| Recent opgericht door Thierry Ding-Dong, Genesis is een vereniging die iedereen verwelkomt om zijn kennis en visie te delen.
+					.col-md-6.col-lg-4.element-animate
+						.media.block-6.d-block.text-center
+							.media-body
+								h3.heading Wat?
+								p
+									| Genesis organiseert lezingen, debatten en uitstappen voor mensen geïnteresseerd in het creationisme.
+					.col-md-6.col-lg-4.element-animate
+						.media.block-6.d-block.text-center
+							.media-body
+								h3.heading Waarom?
+								p
+									| Als leden van Genesis zijn we overtuigd van onze goddelijke missie om de waarheid uit te dragen.
+		section
+			.half.d-lg-flex.d-block
+				.image.order-2.element-animate(data-animate-effect="fadeIn" style="background-image: url('images/Overons_3.jpg')")
+				.text.text-center.element-animate
+					h3.mb-4 Onze Heer
+					p.mb-5
+						| Kom, kom samen met ons op zoek naar God en zijn schepping, zijn belevening, zijn geheime schat.
+					p
+						a.btn.btn-primary.btn-sm.px-3.py-2(href="https://nl.wikipedia.org/wiki/God_(algemeen)") Meer Weten?
+			.half.d-lg-flex.d-block
+				.image.element-animate(data-animate-effect="fadeIn" style="background-image: url('images/Overons_2.jpg')")
+				.text.text-center.element-animate
+					h3.mb-4 Onze Leer
+					p.mb-5
+						| Wij geloven in het woord van de enige, echte God zoals de Bijbel het bewijst. Hij, oppermachtig heeft ons uitgenodigd om ons te verenigen
+						| en Zijn wil uit te dragen. Samen bewonderen we de wereld die Hij voor ons geschapen heeft.
+					p
+						a.btn.btn-primary.btn-sm.px-3.py-2(href="https://nl.wikipedia.org/wiki/Scheppingsverhaal_(Genesis)") Meer Weten?
+		section.section
+			.container
+				.row.justify-content-center.mb-5.element-animate
+					.col-md-8.text-center
+						h2.heading.mb-4 Ontmoet het team
+						p.mb-5.lead
+				.row
+					.col-lg-3
+						.media.d-block.media-custom.text-center
+							img.img-fluid(src="images/Overons_4.jpg" alt="Image Placeholder")
+							.media-body
+								h3.mt-0.text-black Thierry Ding-Dong
+					.col-lg-3
+						.media.d-block.media-custom.text-center
+							img.img-fluid(src="images/Overons_5.jpg" alt="Image Placeholder")
+							.media-body
+								h3.mt-0.text-black Christus van Stofel
+					.col-lg-3
+						.media.d-block.media-custom.text-center
+							img.img-fluid(src="images/Overons_6.jpg" alt="Image Placeholder")
+							.media-body
+								h3.mt-0.text-black Leonardo Messias
+					.col-lg-3
+						.media.d-block.media-custom.text-center
+							img.img-fluid(src="images/Overons_7_312x312.jpg" alt="Image Placeholder")
+							.media-body
+								h3.mt-0.text-black Pritchard Dawgwings
+		section.section
+			.container
+				.row.justify-content-center.mb-5.element-animate
+					.col-md-8.text-center
+						h2.heading.mb-4
+							a(href="/events") Onze Evenementen
+						p.mb-5.lead
+		footer.site-footer(role="contentinfo")
+			.container
+				.row.mb-5
+					.col-md-4.mb-5
+						h3 Genesis
+						p.mb-5
+							| Alles is uit hem ontstaan, alles is door hem geschapen, alles heeft in hem zijn doel. Hem komt de eer toe tot in eeuwigheid. Amen.
+						ul.list-unstyled.footer-link.d-flex.footer-social
+							li
+								a.p-2(href="https://twitter.com/godcreationism")
+									span.fa.fa-twitter
+							li
+								a.p-2(href="https://www.facebook.com/BYECreationism/")
+									span.fa.fa-facebook
+							li
+								a.p-2(href="https://www.instagram.com/explore/tags/creationism/")
+									span.fa.fa-instagram
+					.col-md-5.mb-5.pl-md-5
+						h3 Contact Informatie
+						ul.list-unstyled.footer-link
+							li.d-block
+								span.d-block Adres:
+								span Gebroeders de Smetstraat 1, 9000 Gent, België
+							li.d-block
+								span.d-block Telefoon:
+								span +32 484 436 909
+							li.d-block
+								span.d-block Email:
+								span info@genesis.com
+					.col-md-3.mb-5
+						h3 Snel toegang
+						ul.list-unstyled.footer-link
+							li
+								a(href="/#Wie?") Over Ons
+							li
+								a(href="/contact") Contact
+							li
+								a(href="/gebruiksvoorwaarden") Gebruiksvoorwaarden
+							li
+								a(href="/login") Login
+					.col-md-3
+				.row
+					.col-12.text-md-center.text-left
+						p.copyright
+							| Copyright ©
+							script.
+								document.write(new Date().getFullYear());
+							|  All rights reserved by Genesis
+		// END footer
+		// loader
+		#loader.show.fullscreen
+			svg.circular(width="48px" height="48px")
+				circle.path-bg(cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee")
+				circle.path(cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214")
+		script(src="js/jquery-3.2.1.min.js")
+		script(src="js/popper.min.js")
+		script(src="js/bootstrap.min.js")
+		script(src="js/owl.carousel.min.js")
+		script(src="js/jquery.waypoints.min.js")
+		script(src="js/jquery.fancybox.min.js")
+		script(src="js/main.js")
+		script(src="js/main.js")

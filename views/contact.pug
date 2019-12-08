@@ -1,0 +1,136 @@
+doctype html
+html(lang="en")
+	head
+		title Genesis — 
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		link(href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oxygen:400,700" rel="stylesheet")
+		link(rel="stylesheet" href="css/animate.css")
+		link(rel="stylesheet" href="css/owl.carousel.min.css")
+		link(rel="stylesheet" href="css/jquery.fancybox.min.css")
+		link(rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css")
+		link(rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css")
+		// Theme Style
+		link(rel="stylesheet" href="css/style.css")
+	body
+		header(role="banner")
+			nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+				.container-fluid
+					a.navbar-brand(href="/") Genesis
+					button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation")
+						span.navbar-toggler-icon
+					#navbarsExample05.collapse.navbar-collapse
+						ul.navbar-nav.pl-md-5.ml-auto
+							li.nav-item
+								a.nav-link.active(href="/") Home
+							li.nav-item
+								a.nav-link(href="/#Wie?") Over Ons
+							li.nav-item
+								a.nav-link(href="/events") Events
+							li.nav-item.dropdown
+								a#dropdown04.nav-link.dropdown-toggle(href="/activiteiten" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Activiteiten
+								.dropdown-menu(aria-labelledby="dropdown04")
+									a.dropdown-item(href="/activiteiten#Leren") Leren
+									a.dropdown-item(href="/activiteiten#Lezen") Lezen
+									a.dropdown-item(href="/activiteiten#Leven") Leven
+							li.nav-item
+								a.nav-link(href="/login") Login
+							li.nav-item
+								a.nav-link(href="/contact") Contact
+		// END header
+		.top-shadow
+		.inner-page
+			.slider-item(style="background-image: url('images/Banner.jpg');")
+				.container
+					.row.slider-text.align-items-center.justify-content-center
+						.col-md-8.text-center.col-sm-12.element-animate.pt-5
+							h1.pt-5
+								span Contacteer ons
+							p.mb-5.w-75 Voor extra informatie, contacteer ons met onderstaande gegevens.
+		p(style="margin-bottom:100px;")
+		#openweathermap-widget-9
+		script.
+			window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 9,cityid: '2792197',appid: 'ee0d2e69b691297d5485188799cf2dcc',units: 'metric',containerid: 'openweathermap-widget-9',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();
+		.d-none.d-sm-block.mb-5.pb-4
+			#map(style="height: 480px;")
+			script.
+				function initMap() {
+				var map = new google.maps.Map(document.getElementById('map'), {
+				center: {
+				lat: 51.060800,
+				lng: 3.708860
+				},
+				zoom: 9,
+				scrollwheel: true
+				});
+				var marker = new google.maps.Marker({
+				position: {
+				lat: 51.060800,
+				lng: 3.708860
+				},
+				map: map
+				});
+				}
+			script(async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWdIoL8pMcyanO1ZIrkxZqHNXT2HvM14A&callback=initMap" type="text/javascript")
+		footer.site-footer(role="contentinfo")
+			.container
+				.row.mb-5
+					.col-md-4.mb-5
+						h3 Genesis
+						p.mb-5
+							| Alles is uit hem ontstaan, alles is door hem geschapen, alles heeft in hem zijn doel. Hem komt de eer toe tot in eeuwigheid. Amen.
+						ul.list-unstyled.footer-link.d-flex.footer-social
+							li
+								a.p-2(href="https://twitter.com/godcreationism")
+									span.fa.fa-twitter
+							li
+								a.p-2(href="https://www.facebook.com/BYECreationism/")
+									span.fa.fa-facebook
+							li
+								a.p-2(href="https://www.instagram.com/explore/tags/creationism/")
+									span.fa.fa-instagram
+					.col-md-5.mb-5.pl-md-5
+						h3 Contact Informatie
+						ul.list-unstyled.footer-link
+							li.d-block
+								span.d-block Adres:
+								span Gebroeders de Smetstraat 1, 9000 Gent, België
+							li.d-block
+								span.d-block Telefoon:
+								span +32 484 436 909
+							li.d-block
+								span.d-block Email:
+								span boomer.genesis@outlook.com
+					.col-md-3.mb-5
+						h3 Snel toegang
+						ul.list-unstyled.footer-link
+							li
+								a(href="/#Wie?") Over Ons
+							li
+								a(href="/contact") Contact
+							li
+								a(href="/gebruiksvoorwaarden") Gebruiksvoorwaarden
+							li
+								a(href="/login") Login
+					.col-md-3
+				.row
+					.col-12.text-md-center.text-left
+						p.copyright
+							| Copyright ©
+							script.
+								document.write(new Date().getFullYear());
+							|  All rights reserved by Genesis
+		// END footer
+		// loader
+		#loader.show.fullscreen
+			svg.circular(width="48px" height="48px")
+				circle.path-bg(cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee")
+				circle.path(cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214")
+		script(src="js/jquery-3.2.1.min.js")
+		script(src="js/popper.min.js")
+		script(src="js/bootstrap.min.js")
+		script(src="js/owl.carousel.min.js")
+		script(src="js/jquery.waypoints.min.js")
+		script(src="js/jquery.fancybox.min.js")
+		script(src="js/main.js")
+		script(src="js/main.js")

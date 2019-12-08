@@ -1,0 +1,11 @@
+doctype html
+head
+    title Aanwezigen Creation Museum
+body
+    container
+        h1
+            | Aanwezigen bezoek Creation Museum
+        ul
+            b Naam:
+            each lid in leden
+                p.mb-5.w-75 #{lid.name.trim()}

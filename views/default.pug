@@ -1,0 +1,41 @@
+doctype html
+html(lang="en")
+	head
+		title Genesis — 
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		link(href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oxygen:400,700" rel="stylesheet")
+		link(rel="stylesheet" href="/css/animate.css")
+		link(rel="stylesheet" href="/css/owl.carousel.min.css")
+		link(rel="stylesheet" href="/css/jquery.fancybox.min.css")
+		link(rel="stylesheet" href="/fonts/ionicons/css/ionicons.min.css")
+		link(rel="stylesheet" href="/fonts/fontawesome/css/font-awesome.min.css")
+		// Theme Style
+		link(rel="stylesheet" href="css/style.css")
+	body
+		block header(role="banner")
+			nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+				.container-fluid
+					a.navbar-brand(href="/index") Genesis
+					button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation")
+						span.navbar-toggler-icon
+					#navbarsExample05.collapse.navbar-collapse
+						ul.navbar-nav.pl-md-5.ml-auto
+							li.nav-item
+								a.nav-link.active(href="/index") Home
+							li.nav-item
+								a.nav-link(href="/index#Wie?") Over Ons
+							li.nav-item
+								a.nav-link(href="/events") Events
+							li.nav-item.dropdown
+								a#dropdown04.nav-link.dropdown-toggle(href="/activiteiten" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Activiteiten
+								.dropdown-menu(aria-labelledby="dropdown04")
+									a.dropdown-item(href="/activiteiten#Leren") Leren
+									a.dropdown-item(href="/activiteiten#Lezen") Lezen
+									a.dropdown-item(href="/activiteiten#Leven") Leven
+							li.nav-item
+								a.nav-link(href="/login") Login
+							li.nav-item
+								a.nav-link(href="/contact") Contact
+        block content
+		// END header

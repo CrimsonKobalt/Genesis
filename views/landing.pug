@@ -1,0 +1,80 @@
+doctype html
+html(lang="en")
+	head
+		title Genesis — 
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		link(href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Oxygen:400,700" rel="stylesheet")
+		link(rel="stylesheet" href="css/animate.css")
+		link(rel="stylesheet" href="css/owl.carousel.min.css")
+		link(rel="stylesheet" href="css/jquery.fancybox.min.css")
+		link(rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css")
+		link(rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css")
+		// Theme Style
+		link(rel="stylesheet" href="css/style.css")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js" integrity="sha256-mpnrJ5DpEZZkwkE1ZgkEQQJW/46CSEh/STrZKOB/qoM=" crossorigin="anonymous")
+		//script.
+			var buttonClick = function() {
+				console.log('button pressed')
+			}
+	body
+		header(role="banner")
+			nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+				.container-fluid
+					a.navbar-brand Welcome to Genesis hidden service, #{name}
+					button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation")
+						span.navbar-toggler-icon
+					#navbarsExample05.collapse.navbar-collapse
+						ul.navbar-nav.pl-md-5.ml-auto
+							li.nav-item
+								a.nav-link(href="/Admin?request=show") Solve
+							li.nav-item
+								a.nav-link(href="/") Return to normal service
+
+		.top-shadow
+		.inner-page
+			.slider-item(style="background-image: url('images/Banner.jpg');")
+				.container
+					.row.slider-text.align-items-center.justify-content-center
+						.col-md-8.text-center.col-sm-12.element-animate.pt-5
+							h1.pt-5
+								span Divine God's mysterious ways!
+
+		section.section
+			//.container
+				.row.justify-content-center
+						.container-login100-form-btn
+							.wrap-login100-form-btn
+								.login100-form-bgbtn
+								button(onclick="buttonClick()") 
+									| I will hear God's words!
+			container
+				.container
+					.row.mb-5
+						.col-md-4.mb-5
+							h3 Challenge
+							each jay in JWT
+								p #{jay}    
+		// END footer
+		footer.site-footer(role="contentinfo")
+			.container
+				.row
+					.col-12.text-md-center.text-left
+						p.copyright
+							| Copyright ©
+							script.
+								document.write(new Date().getFullYear());
+							|  All rights reserved by Genesis
+		// loader
+		#loader.show.fullscreen
+			svg.circular(width="48px" height="48px")
+				circle.path-bg(cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee")
+				circle.path(cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214")
+		script(src="js/jquery-3.2.1.min.js")
+		script(src="js/popper.min.js")
+		script(src="js/bootstrap.min.js")
+		script(src="js/owl.carousel.min.js")
+		script(src="js/jquery.waypoints.min.js")
+		script(src="js/jquery.fancybox.min.js")
+		script(src="js/main.js")
+		script(src="js/main.js")

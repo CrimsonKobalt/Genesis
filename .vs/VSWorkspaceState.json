@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\bin",
+    "\\models",
+    "\\public\\images\\icons",
+    "\\public\\vendor\\select2",
+    "\\routes",
+    "\\views"
+  ],
+  "SelectedNode": "\\app.js",
+  "PreviewInSolutionExplorer": false
+}
