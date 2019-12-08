@@ -5,7 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const mongoose = require('mongoose');
 const bodyparser = require('body-parser');
-
+require('dotenv');
 
 var indexRouter = require('./routes/index');
 
@@ -16,9 +16,11 @@ const userModel = require('./models/user');
 var app = express();
 app.use(bodyparser.json());
 
+const dev_db_url = "mongodb+srv://Chris:database@netwerkappli-di5tk.gcp.mongodb.net/Genesis?retryWrites=true&w=majority";
+const mongoConnect = process.env.DB_STRING || dev_db_url;
 //connect to db
 mongoose.connect(
-  'mongodb+srv://Chris:database@netwerkappli-di5tk.gcp.mongodb.net/Genesis?retryWrites=true&w=majority',
+  mongoConnect,
   { useNewUrlParser: true},
   () => console.log('connected to DB!')
 );
@@ -54,6 +56,7 @@ app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
+  //no longer in development!
 
   // render the error page
   res.status(err.status || 500);
