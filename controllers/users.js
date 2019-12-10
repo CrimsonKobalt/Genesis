@@ -56,7 +56,7 @@ module.exports = {
             query: {
                 valid: "GyUrQDIze8iGuMD9v8kM",
                 JWT: JSON.stringify(token),
-                voornaam: req.user.first_name
+                voornaam: newUser.first_name
             }
         }));
     },
@@ -71,7 +71,7 @@ module.exports = {
             query: {
                 valid: "GyUrQDIze8iGuMD9v8kM",
                 JWT: JSON.stringify(token).match(/.{1,75}/g),
-                voornaam: newUser.first_name
+                voornaam: req.user.first_name
             }
         }));
         //res.render('secret', {name: token.name} );
