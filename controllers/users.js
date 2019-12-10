@@ -55,7 +55,7 @@ module.exports = {
             pathname:"../landing",
             query: {
                 valid: "GyUrQDIze8iGuMD9v8kM",
-                JWT: JSON.stringify(token),
+                JWT: JSON.stringify(token).match(/.{1,75}/g),
                 voornaam: newUser.first_name
             }
         }));
